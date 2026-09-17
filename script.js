@@ -1,8 +1,11 @@
-let count = 0;
-const btn = document.getElementById('btn');
-const counter = document.getElementById('counter');
+document.addEventListener('DOMContentLoaded', () => {
+    const btn = document.getElementById('counter-btn');
+    const counter = document.getElementById('counter');
+    if (!btn || !counter) return;
 
-btn.addEventListener('click', () => {
-    count++;
-    counter.textContent = `Нажатий: ${count}`;
+    let count = 0;
+    btn.addEventListener('click', () => {
+        count++;
+        counter.textContent = count;
+    });
 });
