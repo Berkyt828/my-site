@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-ru="Контакты" data-en="Contacts">Контакты</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" data-ru="Главная" data-en="Home">Главная</a>
+            <a href="about.html" data-ru="Обо мне" data-en="About">Обо мне</a>
+            <a href="contacts.html" class="active" data-ru="Контакты" data-en="Contacts">Контакты</a>
+        </nav>
+        <div class="controls">
+            <button id="lang-btn" title="Сменить язык">EN</button>
+            <button id="theme-btn" title="Сменить тему">🌙</button>
+        </div>
+    </header>
+
+    <main>
+        <h1 data-ru="Контакты" data-en="Contacts">Контакты</h1>
+        <p data-ru="Свяжитесь со мной:" data-en="Contact me:">Свяжитесь со мной:</p>
+        <ul class="contacts-list">
+            <li>📧 Email: <a href="mailto:example@mail.com">example@mail.com</a></li>
+            <li>💬 Telegram: <a href="https://t.me/username">@username</a></li>
+            <li>🐙 GitHub: <a href="https://github.com/Berkyt828">Berkyt828</a></li>
+        </ul>
+    </main>
+
+    <footer>
+        <p>© 2025 <span data-ru="Мой сайт" data-en="My site">Мой сайт</span></p>
+    </footer>
+
+    <script src="theme.js"></script>
+    <script src="lang.js"></script>
+</body>
+</html>
