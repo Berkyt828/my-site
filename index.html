@@ -3,21 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мой первый сайт</title>
+    <title data-ru="Главная" data-en="Home">Главная</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Привет, мир! 👋</h1>
-        <p>Это мой первый сайт на GitHub Pages</p>
+        <nav>
+            <a href="index.html" class="active" data-ru="Главная" data-en="Home">Главная</a>
+            <a href="about.html" data-ru="Обо мне" data-en="About">Обо мне</a>
+            <a href="contacts.html" data-ru="Контакты" data-en="Contacts">Контакты</a>
+        </nav>
+        <div class="controls">
+            <button id="lang-btn" title="Сменить язык">EN</button>
+            <button id="theme-btn" title="Сменить тему">🌙</button>
+        </div>
     </header>
+
     <main>
-        <button id="btn">Нажми меня</button>
-        <p id="counter">Нажатий: 0</p>
+        <h1 data-ru="Привет, мир! 👋" data-en="Hello, world! 👋">Привет, мир! 👋</h1>
+        <p data-ru="Это мой первый сайт на GitHub Pages" data-en="This is my first site on GitHub Pages">Это мой первый сайт на GitHub Pages</p>
+
+        <button id="counter-btn" data-ru="Нажми меня" data-en="Click me">Нажми меня</button>
+        <p id="counter-text"><span data-ru="Нажатий" data-en="Clicks">Нажатий</span>: <span id="counter">0</span></p>
     </main>
+
     <footer>
-        <p>© 2025 Мой сайт</p>
+        <p>© 2025 <span data-ru="Мой сайт" data-en="My site">Мой сайт</span></p>
     </footer>
+
+    <script src="theme.js"></script>
+    <script src="lang.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
