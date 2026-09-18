@@ -35,5 +35,20 @@
     <script src="theme.js"></script>
     <script src="lang.js"></script>
     <script src="script.js"></script>
+    <script>
+document.getElementById('notify-btn').addEventListener('click', async () => {
+  try {
+    const r = await fetch('https://telegram-bot-2flj.onrender.com/notify');
+    const data = await r.json();
+    if (data.ok) {
+      alert('Бот уведомлён!');
+    } else {
+      alert('Ошибка: ' + JSON.stringify(data));
+    }
+  } catch (e) {
+    alert('Ошибка сети: ' + e);
+  }
+});
+</script>
 </body>
 </html>
