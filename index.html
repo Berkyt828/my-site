@@ -36,11 +36,10 @@
     <script src="lang.js"></script>
     <script src="script.js"></script>
     <script>
-        document.getElementById('notify-btn').addEventListener('click', async () => {
-          try {
-            await fetch('https://telegram-bot-2flj.onrender.com/notify', { mode: 'no-cors' });
-          } catch (e) {}
-        });
+        document.getElementById('notify-btn').addEventListener('click', () => {
+  fetch('https://telegram-bot-2flj.onrender.com/notify', { mode: 'no-cors' });
+  alert('Бот уведомлён!');
+});
     </script>
 </body>
 </html>
